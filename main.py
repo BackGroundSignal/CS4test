@@ -3,8 +3,10 @@ import os
 tasks = []
 done = []
 
+clear_str = "cls" if os.name == "nt" else "clear"
+
 while True:
-    os.system("cls")
+    os.system(clear_str)
 
     tasks = sorted(tasks)
     done = sorted(done)
