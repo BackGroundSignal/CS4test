@@ -4,7 +4,6 @@ tasks = []
 done = []
 
 clear_str = "cls" if os.name == "nt" else "clear"
-exit = False
 
 while True:
     os.system(clear_str)
