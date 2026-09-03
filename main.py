@@ -4,6 +4,7 @@ tasks = []
 done = []
 
 clear_str = "cls" if os.name == "nt" else "clear"
+exit = False
 
 while True:
     os.system(clear_str)
@@ -18,6 +19,10 @@ while True:
         print(f"[X] {task}")
 
     u_input = input("\nEnter your task: ").strip()
+
+    if u_input == "_exit_":
+        os.system(clear_str)
+        quit()
 
     if u_input in tasks:
         done.append(u_input)
